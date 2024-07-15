@@ -1,0 +1,362 @@
+@font-face {
+    font-family: FontOne;
+    src: url(/Assets/Fonts/Font.ttf);
+}
+@font-face {
+    font-family: Big-river;
+    src: url(/Assets/Fonts/big-river.ttf);
+  }
+  @font-face {
+    font-family: Satoshi-Regular;
+    src: url(/Assets/Fonts/Satoshi-Regular.ttf);
+  }
+  @font-face {
+    font-family: Satoshi-Medium;
+    src: url(/Assets/Fonts/Satoshi-Medium.ttf);
+  }
+  @font-face {
+    font-family: Satoshi-Bold;
+    src: url(/Assets/Fonts/Satoshi-Bold.ttf);
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@keyframes infinite-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/*..........................................roll button...............................................*/
+.roll-button-wrapper{
+    display: flex;
+    align-items: center;
+    font-family: Satoshi-Medium;
+    font-size: 15px;
+    height: 50px;
+    text-align: center;
+  }
+.roll-button{
+    width: 150px;
+    height: 35px;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    mix-blend-mode: difference;
+  }
+  
+  .button-text-wrapper{
+    height: 35px;
+  }
+  .button-text-1{
+    margin-top: 5px;
+    transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
+  }
+  .button-text-2{
+    margin-top: 10px;
+  }
+  .roll-button:hover .button-text-1{
+    margin-top: -25px;
+  }
+/*..........................................Know More Page Starts Here............................*/
+#know-more-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+  }
+  .km-banner{
+    width: 100%;
+    height: 100vh;
+    padding: 10vh 0;
+    color: white;
+  }
+  .scrolling-title-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+  .ab-infinite-scroll p{
+    display: inline-block;
+    white-space: nowrap;
+    font-family: Satoshi-Bold;
+    font-size: 15rem;
+    color: white;
+    padding: 0 6vw;
+  }
+  .ab-infinite-scroll{
+    display: flex;
+    animation: infinite-scroll 30s linear infinite;
+  }
+  .banner-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    width: 40%;
+    height: 50vh;
+    margin-top: 5%;
+    padding-left: 2.5%;
+  }
+  .banner-bottom span{
+    font-family: Satoshi-Regular;
+    font-size: 1.2rem;
+  }
+  .km-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    width: 95%;
+    background-color: white;
+    padding: 2%;
+    margin-top: 5%;
+  }
+  .title-wrapper{
+    border-bottom: 1px solid rgb(215, 214, 214);
+    overflow: hidden;
+    width: max-content;
+    height: 22vh;
+  }
+  .km-title{
+    font-family: Big-river;
+    font-size: 11.2rem;
+    font-weight: bold;
+  }
+  .my-desc-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5vw;
+    width: 100%;
+    padding: 2.5%;
+  }
+  .my-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 90vh;
+    background-color: #0D0D0D;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .my-image img{
+    width: 70%;
+    border-radius: 20px;
+  }
+  .my-desc{
+    width: 50%;
+    height: 90vh;
+    font-family: Satoshi-Medium;
+  }
+  .my-desc p:nth-child(1){
+    font-family: Satoshi-Regular;
+    font-size: 3.5rem;
+  }
+  .my-desc p:nth-child(2){
+    margin-top: 10vh;
+    font-size: 1.3rem;
+  }
+  .my-desc p:nth-child(3){
+    margin-top: 5vh;
+    font-size: 1.3rem;
+  }
+  .my-exp-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5vw;
+    width: 100%;
+    padding: 2.5%;
+  }
+  .exp-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 90vh;
+    background-color: #0D0D0D;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .exp-image img{
+    object-fit: cover;
+    width: 70%;
+    height: 80%;
+    border-radius: 20px;
+  }
+  .exp-desc{
+    width: 50%;
+    height: 90vh;
+    font-family: Satoshi-Medium;
+  }
+  .exp-desc p:nth-child(1){
+    font-family: Satoshi-Regular;
+    font-size: 3.5rem;
+  }
+  .exp-div{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin-top: 5vh;
+  }
+  @media screen and (min-width:1400px) {
+    .km-title{
+      font-family: Big-river;
+      font-size: 11rem;
+      font-weight: bold;
+    }
+  }
+  @media screen and (max-width:767px) {
+    .button-text-2{
+      margin-top: 25px;
+    }
+    .roll-button:hover .button-text-1{
+      margin-top: 0px;
+    }
+    .ab-infinite-scroll p{
+      font-size: 8rem;
+    }
+    .banner-bottom{
+      gap: 5vh;
+      width: 80%;
+      margin-top: 25%;
+      padding-left: 5%;
+    }
+    .title-wrapper{
+      height: 6vh;
+    }
+    .km-title{
+      font-size: 4rem;
+    }
+    .my-desc-wrapper{
+      flex-direction: column;
+      align-items: center;
+      gap: 5vw;
+      width: 100%;
+      margin-top: 5vh;
+    }
+    .my-image{
+      width: 90%;
+      height: 45vh;
+    }
+    .my-image img{
+      width: 90%;
+      border-radius: 20px;
+    }
+    .my-desc{
+      width: 90%;
+      height: auto;
+    }
+    .my-exp-wrapper{
+      flex-direction: column;
+    }
+    .exp-image{
+      width: 90%;
+      height: 45vh;
+    }
+    .exp-image img{
+      width: 90%;
+      height: 90%;
+    }
+    .exp-desc{
+      width: 90%;
+      height: 90vh;
+      font-family: Satoshi-Medium;
+    }
+    .my-desc p:nth-child(1){
+      font-size: 2.5rem;
+    }
+    .exp-desc p:nth-child(1){
+      font-size: 2.5rem;
+    }
+  }
+
+  @media screen and (min-width: 767px) and (max-width: 900px){
+    .banner-bottom{
+      gap: 5vh;
+      width: 80%;
+      padding-left: 5%;
+    }
+    .km-banner{
+      height: 80vh;
+    }
+    .banner-bottom span{
+      font-size: 1.5rem;
+    }
+    .banner-bottom{
+      gap: 5vh;
+      width: 80%;
+      margin-top: 25%;
+      padding-left: 5%;
+    }
+    .title-wrapper{
+      height: 9vh;
+    }
+    .km-title{
+      font-size: 8rem;
+    }
+    .my-desc-wrapper{
+      flex-direction: column;
+      align-items: center;
+      gap: 5vw;
+      width: 100%;
+      margin-top: 5vh;
+    }
+    .my-image{
+      width: 90%;
+      height: 45vh;
+    }
+    .my-image img{
+      width: 90%;
+      border-radius: 20px;
+    }
+    .my-desc{
+      width: 90%;
+      height: auto;
+    }
+    .my-desc p:nth-child(2){
+      margin-top: 5vh;
+    }
+    .my-desc p:nth-child(2){
+      font-size: 2rem;
+    }
+    .my-desc p:nth-child(3){
+      font-size: 2rem;
+    }
+    .my-exp-wrapper{
+      flex-direction: column;
+    }
+    .exp-image{
+      width: 90%;
+      height: 45vh;
+    }
+    .exp-image img{
+      width: 90%;
+      height: 90%;
+    }
+    .exp-desc{
+      width: 90%;
+      height: 90vh;
+      font-family: Satoshi-Medium;
+    }
+    .exp-div h3{
+      font-size: 3rem;
+    }
+    .exp-div h4{
+      font-size: 1.5rem;
+    }
+  }

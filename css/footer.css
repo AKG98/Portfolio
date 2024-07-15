@@ -1,0 +1,66 @@
+
+  @font-face {
+    font-family: Satoshi-Regular;
+    src: url(/Assets/Fonts/Satoshi-Regular.ttf);
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*.........................................Footer Page Starts Here.....................................*/
+#footer-page{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding-top: 30vh;
+    background-color: black;
+    font-family: Satoshi-Regular;
+    color: white;
+  }
+  .footer-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10vh;
+    text-align: center;
+  }
+  .footer-top span{
+    font-size: 1.5rem;
+    width: 50%;
+  }
+  .footer-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    width: 90%;
+    height: 15vh;
+  }
+  .menu-items{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+  }
+  .menu-items a{
+    transition: ease-in-out 0.2s;
+    text-decoration: none;
+    color: rgb(109, 106, 106);
+  }
+  .menu-items a:hover{
+    color: white;
+  }
+  @media screen and (max-width:768px) {
+    .footer-top span{
+      font-size: 1.2rem;
+      width: 75%;
+    }
+    .roll-button:hover .button-text-1{
+      margin-top: -40px;
+    }
+  }
