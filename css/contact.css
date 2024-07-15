@@ -1,12 +1,12 @@
   
   @font-face {
     font-family: Satoshi-Regular;
-    src: url(/Assets/Fonts/Satoshi-Regular.ttf);
+    src: url(../Assets/Fonts/Satoshi-Regular.ttf);
   }
 
   @font-face {
     font-family: Satoshi-Bold;
-    src: url(/Assets/Fonts/Satoshi-Bold.ttf);
+    src: url(../Assets/Fonts/Satoshi-Bold.ttf);
   }
 *{
     margin: 0;
